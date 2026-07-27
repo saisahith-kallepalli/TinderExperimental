@@ -1,0 +1,19 @@
+{
+  "name": "tinderbackend",
+  "version": "1.0.0",
+  "description": "Tinder experimental",
+  "license": "ISC",
+  "author": "Sahith",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
