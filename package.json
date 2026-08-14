@@ -7,6 +7,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "start": "node dotenv/config src/app.js dotenv_config_path=.env.local",
+    "dev": "nodemon --env-file=.env.local src/app.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,6 +18,12 @@
     "nodejs"
   ],
   "dependencies": {
-    "express": "^5.2.1"
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.8.1",
+    "validator": "^13.15.35"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
   }
 }
